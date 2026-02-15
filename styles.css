@@ -21,25 +21,32 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #fff;
-    border-bottom: 1px solid #e0e0e0;
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
     padding: 20px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .journal-title h1 {
     font-size: 2rem;
     font-weight: 700;
-    color: #000;
+    color: #fff;
     margin-bottom: 5px;
+}
+
+.journal-title h1 img {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
+    display: block;
 }
 
 .journal-title .subtitle {
     font-size: 0.9rem;
-    color: #666;
+    color: #4db8a8;
     margin-bottom: 15px;
 }
 
@@ -48,13 +55,13 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 30px;
-    border-top: 1px solid #e0e0e0;
+    border-top: 1px solid #333;
     padding-top: 15px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #ccc;
     font-weight: 500;
     padding: 5px 10px;
     transition: color 0.3s, border-bottom 0.3s;
@@ -62,12 +69,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #0066cc;
+    color: #4db8a8;
 }
 
 nav ul li a.active {
-    color: #0066cc;
-    border-bottom: 2px solid #0066cc;
+    color: #4db8a8;
+    border-bottom: 2px solid #4db8a8;
 }
 
 /* Main Content */
@@ -95,10 +102,31 @@ section h2 {
     padding: 25px;
     margin-bottom: 25px;
     transition: box-shadow 0.3s;
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
 }
 
 .article-card:hover {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.article-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.article-thumbnail {
+    flex-shrink: 0;
+    width: 200px;
+}
+
+.article-thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+    display: block;
 }
 
 .article-meta {
@@ -376,6 +404,11 @@ footer p {
 
     .article-card {
         padding: 20px;
+        flex-direction: column;
+    }
+
+    .article-thumbnail {
+        width: 100%;
     }
 
     .article-footer {
