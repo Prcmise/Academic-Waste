@@ -205,6 +205,68 @@ section h2 {
     text-decoration: underline;
 }
 
+/* Special About Page Elements */
+.intro-section {
+    background: #f8f9fa;
+    padding: 25px;
+    border-left: 4px solid #666;
+    border-radius: 4px;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 15px !important;
+}
+
+.question {
+    font-style: italic;
+    color: #555;
+    margin: 20px 0 !important;
+}
+
+.note {
+    font-style: italic;
+    color: #666;
+    font-size: 0.95rem;
+    margin-top: 15px !important;
+}
+
+.disclaimer {
+    background: #fff3cd;
+    padding: 12px 15px;
+    border-left: 3px solid #ffc107;
+    margin-top: 15px !important;
+    font-size: 0.95rem;
+}
+
+.statement {
+    font-size: 1.05rem;
+    color: #000;
+}
+
+.closing-section {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.closing-section .tagline {
+    font-size: 1.15rem;
+    margin-top: 15px !important;
+}
+
+.metrics-section ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+.metrics-section ul li {
+    padding-left: 0;
+}
+
 /* Submissions Page Styles */
 .submissions-content {
     max-width: 800px;
